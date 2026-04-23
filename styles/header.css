@@ -98,6 +98,11 @@ p {
   padding-bottom: 94px;
 }
 
+.vector {
+  margin-top: 94px;
+  margin-bottom: 0;
+}
+
 .container-projects {
   background-color: var(--gray-500); 
   display: flex;
@@ -106,10 +111,6 @@ p {
   text-align: center;
 }
 
-.vector {
-  margin-top: 94px;
-  margin-bottom: 0;
-}
 
 .job {
   margin-top: 72px;
@@ -119,7 +120,7 @@ p {
   text-align: center;
 }
 
-h2 {
+.title-md {
   font: var(--title-md);
   color: var(--gray-100);
   margin-bottom: 56px;
@@ -131,6 +132,7 @@ h2 {
   gap: 24px;
   justify-content: center;
   padding: 24px;
+  margin-bottom: 144px;
 }
 
 .card-project {
@@ -185,11 +187,62 @@ h2 {
   color: var(--gray-100);
 }
 
-p {
+.text-sm {
   margin: 4px 0 0 0;
   font: var(--text-sm);
   color: var(--gray-200);
   line-height: 1.4;
+}
+
+.container-services {
+  background-color: var(--gray-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 480px; 
+  padding-top: 88px;
+}
+
+.subtitle {
+  font: var(--subtitle);
+  color: var(--red);
+  align-items: center;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-content: center;
+  padding: 24px;
+  margin-bottom: 144px;
+}
+
+.grid-card {
+  background-color: transparent;
+  border: 2px solid var(--gray-500);
+  position: relative;
+  width: 280px;
+  height: 155px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.device-img {
+  margin: 20px;
+  display: flex;
+}
+
+.text {
+  margin: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 
