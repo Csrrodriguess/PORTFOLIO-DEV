@@ -252,6 +252,8 @@ p {
     height: auto;
     min-height: 100vh;
     padding: 72px 20px 48px;
+    flex-direction: column;
+    align-items: center;
   }
   h1 {
     font-size: 2rem; /* reduz título gigante no celular */
@@ -309,5 +311,59 @@ p {
     height: auto;
     min-height: 68px;
     padding: 16px;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  #hero {
+    padding: 80px 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-img-wrapper {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 40px;
+  }
+
+  .profile-img {
+    width: 62px;
+    height: 62px;
+  }
+
+  .profile-content {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    padding-bottom: 40px;
+  }
+
+  .skill-container {
+    gap: 12px;
+    padding: 0 0 40px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .card-project {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumb-img {
+    height: 120px;
   }
 }
