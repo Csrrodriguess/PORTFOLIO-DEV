@@ -23,7 +23,7 @@ Caso queira visualizar o código deste portfólio na sua máquina:
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/csrrodriguess/PORTFOLIO-DEV.git](https://github.com/csrrodriguess/PORTFOLIO-DEV.git)
+   git clone [https://github.com/cesar-rodriguess/PORTFOLIO-DEV.git](https://cesar-rodriguess.github.io/PORTFOLIO-DEV/)
 
 2. Acesse a pasta do projeto.
 
