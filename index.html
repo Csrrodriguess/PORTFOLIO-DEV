@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <link rel="stylesheet" href="styles/index.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Dev</title>
+
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:ital,wght@0,100..900;1,100..900&family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    </header>
-
   <main>
     <section id="hero" class="container">
       <div class="profile-content">
@@ -34,38 +23,33 @@
         <h1>Desenvolvedor Fullstack</h1>
         <p class="description">Especialista em TI em transição para o desenvolvimento de software... com foco em Node.js e React.</p>
 
-        <div class="skill-container">
-          <span class="badge">
+        <ul class="skill-container" aria-label="Tecnologias">
+          <li class="badge">
             <img src="assets/icons-customs/GitHub.svg" alt="GitHub">
-          </span>
-          
-          <span class="badge">
+          </li>
+          <li class="badge">
             <img src="assets/icons-customs/HTML.svg" alt="HTML">
-          </span>
-
-          <span class="badge">
+          </li>
+          <li class="badge">
             <img src="assets/icons-customs/CSS.svg" alt="CSS">
-          </span>
-
-          <span class="badge">
+          </li>
+          <li class="badge">
             <img src="assets/icons-customs/JavaScript.svg" alt="JavaScript">
-          </span>
-
-          <span class="badge">
+          </li>
+          <li class="badge">
             <img src="assets/icons-customs/React.svg" alt="React">
-          </span>
-
-          <span class="badge">
+          </li>
+          <li class="badge">
             <img src="assets/icons-customs/Node.svg" alt="Node">
-          </span>
-        </div>
+          </li>
+        </ul>
         <div class="vector">
-          <img src="assets/icons/CaretDoubleDown.svg" alt="vector">
-        </div> 
+          <img src="assets/icons/CaretDoubleDown.svg" alt="Descer para próximas seções">
+        </div>
       </div>
     </section>
 
-    <section id="Project" class="container-projects">
+    <section id="projects" class="container-projects">
       <div class="header">
         <h1 class="job">Meu trabalho</h1>
         <h2 class="title-md">Veja os projetos em destaque</h2>
@@ -73,51 +57,34 @@
 
       <div class="projects-grid">
         <article class="card-project">
-          <div class="card">
-            <img src="assets/project/Thumbnail_Project-01.png" alt="Travelgram" class="thumb-img">
-            <div class="card-text">
-              <h3 class="title-sm">Travelgram</h3>
-              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo <br>
-              <img src="assets/icons/HTML.svg" alt="HTML">
-              <img src="assets/icons/CSS.svg" alt=""></p> 
-            </div>
+          <img src="assets/project/Thumbnail_Project-01.png" alt="Travelgram" class="thumb-img">
+          <div class="card-text">
+            <h3 class="title-sm">Travelgram</h3>
+            <p class="text-sm">Rede social onde as pessoas mostram os registros de suas viagens pelo mundo.</p>
           </div>
         </article>
 
         <article class="card-project">
-          <div class="card">
-            <img src="assets/project/Thumbnail_Project-02.png" alt="Pagina de Noticias" class="thumb-img">
-            <div class="card-text">
-              <h3 class="title-sm">Tech News</h3>
-              <p>Homepage de um portal de notícias sobre a área de tecnologia<br>
-              <img src="assets/icons/HTML.svg" alt="HTML">
-              <img src="assets/icons/CSS.svg" alt="">
-              </p>
-            </div>
+          <img src="assets/project/Thumbnail_Project-02.png" alt="Página de notícias" class="thumb-img">
+          <div class="card-text">
+            <h3 class="title-sm">Tech News</h3>
+            <p class="text-sm">Homepage de um portal de notícias sobre a área de tecnologia.</p>
           </div>
         </article>
 
         <article class="card-project">
-          <div class="card">
-            <img src="assets/project/Thumbnail_Project-03.png" alt="Pagina de Receitas" class="thumb-img">
-            <div class="card-text">
-              <h3 class="title-sm">Pagina de Receitas</h3> 
-              <p>Página com o passo a passo de uma receita para cupcakes <br>
-              <img src="assets/icons/HTML.svg" alt="HTML">
-              <img src="assets/icons/CSS.svg" alt=""></p>
-            </div>
+          <img src="assets/project/Thumbnail_Project-03.png" alt="Página de receitas" class="thumb-img">
+          <div class="card-text">
+            <h3 class="title-sm">Página de Receitas</h3>
+            <p class="text-sm">Página com o passo a passo de uma receita para cupcakes.</p>
           </div>
         </article>
 
         <article class="card-project">
-          <div class="card">
-            <img src="assets/project/Thumbnail_Project-06.png" alt="Pagina de Turismo" class="thumb-img">
-            <div class="card-text">
-              <h3 class="title-sm">Página de turismo</h3>
-              <p class="text-sm">Página com as principais informações para quem quer viajar para Busan <br>
-              <img src="assets/icons/HTML.svg" alt="HTML">
-              <img src="assets/icons/CSS.svg" alt=""></p>
-            </div>
+          <img src="assets/project/Thumbnail_Project-06.png" alt="Página de turismo" class="thumb-img">
+          <div class="card-text">
+            <h3 class="title-sm">Página de turismo</h3>
+            <p class="text-sm">Página com as principais informações para quem quer viajar para Busan.</p>
           </div>
         </article>
       </div>
@@ -126,7 +93,7 @@
     <section id="services" class="container-services">
       <div class="header">
         <h1 class="subtitle">Meus serviços</h1>
-        <h2 class="title-md">Como posso asjudar o seu negócio?</h2>
+        <h2 class="title-md">Como posso ajudar o seu negócio?</h2>
       </div>
 
       <div class="services-grid">
@@ -152,11 +119,21 @@
       </div>
     </section>
 
-    <section id="contact" class="container- contact">
+    <section id="contact">
       <div class="header">
         <h1 class="subtitle">Contato</h1>
         <h2 class="md">Gostou do meu trabalho?</h2>
-        <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+        <p class="text-md">Entre em contato ou acompanhe as minhas redes sociais!</p>
+      </div>
+    
+      <div class="contact-grid">
+        <a href="https://www.linkedin.com" class="contact-card">
+          <div class="left-content">
+            <img src="assets/icons/LinkedinLogo.svg" alt="Linkedin" class="logo">
+            <p>Linkedin</p>
+          </div>
+          <img src="assets/icons/ArrowUpRight.svg" alt="ArrowUpRight" class="button">
+        </a>
       </div>
     </section>
   </main>

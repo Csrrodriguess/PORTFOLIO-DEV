@@ -1,80 +1,63 @@
 #hero {
-  background-image: url('../assets/Background/Background_Intro.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
+  background: url("../assets/Background/Background_Intro.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
-  padding: 120px 163px 186px 163px;
-
+  padding: 120px 163px 186px;
   height: 750px;
-  box-sizing: border-box;
 }
 
 .profile-img-wrapper {
   position: relative;
   display: inline-block;
-  width: 96px; /* ajuste conforme o tamanho da Border.svg */
+  width: 96px;
   height: 96px;
   margin-bottom: 56px;
 }
 
-
 .profile-border {
-  width: 96px;
-  height: 96px;
-  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .profile-img {
-  width: 82.7px;
-  height: 82.7px;
-  object-fit: cover;
-  border-radius: 999px;
-  /* border: 4.36px solid var(--gray-500); */
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 82.7px;
+  height: 82.7px;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  object-fit: cover;
+  border-radius: 999px;
   background: #fff;
 }
 
 .profile-icon {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  right: 0;
+  bottom: 0;
   width: 32px;
   height: 32px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   padding: 6px;
-  z-index: 3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-content {
+.profile-content,
+.header,
+.container-projects,
+.container-services,
+.contact-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  max-width: 1040px;
-  width: 100%;
 }
 
-.header {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  text-align: center; 
-  /* gap: 16px; */
+.profile-content {
+  max-width: 1040px;
+  width: 100%;
 }
 
 .subtitle {
@@ -85,7 +68,6 @@
 .destaque {
   color: var(--red);
 }
-
 
 h1 {
   font: var(--title-lg);
@@ -99,97 +81,76 @@ p {
 }
 
 .skill-container {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  padding-bottom: 94px;
+  padding: 0 0 94px;
 }
 
 .vector {
   margin-top: 94px;
-  margin-bottom: 0;
 }
 
 .container-projects {
-  background-color: var(--gray-500); 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: var(--gray-500);
 }
-
 
 .job {
   margin-top: 72px;
   font: var(--subtitle);
   color: var(--red);
-  align-items: center;
-  text-align: center;
 }
 
-.title-md {
-  font: var(--title-md);
-  color: var(--gray-100);
-  margin-bottom: 56px;
+.header .subtitle {
+  color: var(--red);
 }
 
+.title-md,
 .md {
   font: var(--title-md);
   color: var(--gray-100);
 }
 
+.title-md {
+  margin-bottom: 56px;
+}
+
+.text-md {
+  font: var(--text-md);
+  color: var(--gray-200);
+  padding-bottom: 46px;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  justify-content: center;
   padding: 24px;
   margin-bottom: 144px;
 }
 
 .card-project {
-  background-color: var(--gray-400);
-  position: relative;
   width: 330px;
   height: 280px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.card-bg {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  position: relative;
-  z-index: 1;
-}
-
-.card {
-  position: absolute;
-  inset: 0;
   padding: 12px;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: flex-end;
-
-  z-index: 2;
+  border-radius: 8px;
+  background-color: var(--gray-400);
+  overflow: hidden;
 }
 
 .thumb-img {
   width: 100%;
   height: 156px;
-  object-fit: cover;
-  border-radius: 8px;
   margin-bottom: 12px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .card-text {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   text-align: left;
 }
@@ -201,85 +162,86 @@ p {
 }
 
 .text-sm {
-  margin: 4px 0 0 0;
+  margin: 4px 0 0;
   font: var(--text-sm);
   color: var(--gray-200);
   line-height: 1.4;
 }
 
-.text-md {
-  font: var(--text-md);
-  align-items: center;
-  text-align: center;
-}
-
-.subtitle {
-  font: var(--subtitle);
-  color: var(--red);
-  align-items: center;
-  text-align: center;
-}
-
 .container-services {
-  background-color: var(--gray-600);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 480px; 
+  height: 480px;
   padding-top: 88px;
+  background-color: var(--gray-600);
 }
-
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  justify-content: center;
   padding: 24px;
   margin-bottom: 144px;
 }
 
 .grid-card {
-  background-color: transparent;
-  border: 2px solid var(--gray-500);
-  position: relative;
   width: 280px;
   height: 155px;
+  border: 2px solid var(--gray-500);
   border-radius: 8px;
   overflow: hidden;
 }
 
-.device-img {
+.device-img,
+.text {
   margin: 20px;
-  display: flex;
 }
 
 .text {
-  margin: 20px;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   text-align: left;
 }
 
 #contact {
-  background-image: url(../assets/background/Background_Contacts.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  padding: 128px 120px 200px 120px;
-
+  background: url("../assets/Background/Background_Contacts.png") center/cover no-repeat;
+  padding: 128px 120px 200px;
   height: 787px;
-  box-sizing: border-box;
 }
+
+.contact-grid {
+  justify-content: center;
+}
+
+.contact-card {
+  width: 400px;
+  height: 68px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: var(--gray-400);
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-card:hover {
+  background-color: var(--gray-500);
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-card p {
+  padding: 0;
+  font: var(--text-md);
+  color: var(--gray-200);
+}
+
+
 
 
 
