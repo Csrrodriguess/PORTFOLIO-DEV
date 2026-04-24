@@ -246,3 +246,68 @@ p {
   color: var(--gray-200);
 }
 
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 72px 20px 48px;
+  }
+  h1 {
+    font-size: 2rem; /* reduz título gigante no celular */
+    line-height: 1.2;
+  }
+  p {
+    padding-bottom: 32px;
+  }
+  .skill-container {
+    gap: 10px;
+    padding-bottom: 40px;
+  }
+  .vector {
+    margin-top: 32px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+    margin-bottom: 64px;
+  }
+  .card-project {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+  .thumb-img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .container-services {
+    height: auto;
+    padding: 64px 16px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .grid-card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+  #contact {
+    height: auto;
+    padding: 64px 16px;
+    background-size: cover;
+    background-position: center;
+  }
+  .contact-card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    min-height: 68px;
+    padding: 16px;
+  }
+}
