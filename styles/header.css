@@ -185,14 +185,18 @@ p {
 .grid-card {
   width: 280px;
   height: 155px;
+  padding: 20px;
   border: 2px solid var(--gray-500);
   border-radius: 8px;
   overflow: hidden;
+  background: transparent;
 }
 
-.device-img,
-.text {
-  margin: 20px;
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px
 }
 
 .text {
@@ -203,7 +207,7 @@ p {
 }
 
 #contact {
-  background: url("../assets/Background/Background_Contacts.png") center/cover no-repeat;
+  background: url("../assets/Background/Background_Contacts.png");
   padding: 128px 120px 200px;
   height: 787px;
 }
@@ -223,6 +227,7 @@ p {
   background-color: var(--gray-400);
   text-decoration: none;
   color: inherit;
+  margin-bottom: 16px;
 }
 
 .contact-card:hover {
@@ -240,8 +245,4 @@ p {
   font: var(--text-md);
   color: var(--gray-200);
 }
-
-
-
-
 
