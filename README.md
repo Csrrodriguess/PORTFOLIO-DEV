@@ -4,7 +4,7 @@ Bem-vindo ao repositório do meu portfólio! Este espaço foi criado para centra
 
 ## 🔗 Acesse Online
 Você pode visualizar meu portfólio no ar clicando no link abaixo:
-👉 [**Acessar Portfólio**](https://csrrodriguess.github.io/PORTFOLIO-DEV/)
+👉 [**Acessar Portfólio**](https://cesar-rodriguess.github.io/PORTFOLIO-DEV/)
 
 ## 👨‍💻 Sobre Mim
 Sou um profissional de TI com experiência consolidada em infraestrutura e redes, atualmente em transição de carreira para o Desenvolvimento de Software. 
